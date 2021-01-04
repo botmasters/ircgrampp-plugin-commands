@@ -1,0 +1,29 @@
+{
+  "name": "ircgrampp-plugin-commands",
+  "version": "0.1.0",
+  "description": "Plugin for ircgrampp to manage commands",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib/**; npx babel src --out-dir lib --copy-files",
+    "prepublish": "rm -rf lib/* && npm run build"
+  },
+  "author": "Botmasters",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botmasters/ircgrampp-plugin-commands.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0"
+  },
+  "dependencies": {
+    "ircgrampp-plugin": "0.3.1"
+  }
+}
